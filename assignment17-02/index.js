@@ -30,10 +30,6 @@ const userss = [
     }]
 
 
-
-
-
-
 app.get("/user/:id", (req, res) => {
     const userId = Number(req.params.id);
     const user = userss.find(u => u.uid === userId);
@@ -62,11 +58,6 @@ app.post("/user", (req, res) => {
         user: newUser
     });
 });
-
-
-
-
-
 
 
 app.put("/users/:id", (req, res) => {
